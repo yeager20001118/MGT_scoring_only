@@ -1,0 +1,57 @@
+# ============================================================
+# Large / generated / junk — must NOT be committed.
+# NOTE: data/raw_data/ (source text + perturbation caches, ≤28 MB each)
+#       IS intentionally tracked — the package needs it. Do not ignore it.
+# ============================================================
+
+# --- Model checkpoints (multi-GB, downloaded on the remote server) ---
+models/cache/
+**/local.*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+*.onnx
+
+# --- Generated scoring outputs (produced on the remote server, handed back separately) ---
+scoring_results/*.json
+!scoring_results/.gitkeep
+
+# --- Logs ---
+logs/*
+!logs/.gitkeep
+*.log
+
+# --- Handback / archives ---
+*.tar.gz
+*.tgz
+*.zip
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# --- Virtualenvs / conda (the env/ CONFIG dir is tracked; these are build dirs) ---
+.venv/
+venv/
+env/bin/
+env/lib/
+env/include/
+env/pyvenv.cfg
+.conda/
+
+# --- HF / tokenizer caches & locks ---
+.locks/
+*.lock
+.cache/
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+*.bak
+*.bak.*

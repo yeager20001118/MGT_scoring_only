@@ -1,0 +1,13 @@
+# pip fallback (create a fresh venv first: python3.10 -m venv .venv && source .venv/bin/activate)
+# Install torch SEPARATELY with the wheel that matches the server's CUDA/ROCm, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+transformers>=4.50
+accelerate
+sentencepiece
+protobuf
+scipy
+scikit-learn
+matplotlib
+numpy
+tqdm
+huggingface_hub

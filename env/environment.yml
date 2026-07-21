@@ -1,0 +1,23 @@
+name: scoring
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      # Torch: install the build that matches the target server's CUDA/ROCm.
+      # NVIDIA CUDA 12.x example:
+      #   pip install torch --index-url https://download.pytorch.org/whl/cu121
+      # AMD ROCm example:
+      #   pip install torch --index-url https://download.pytorch.org/whl/rocm6.0
+      - torch
+      - "transformers>=4.50"      # >=4.50 required for gemma-3 (gemma3_4b / gemma3_12b)
+      - accelerate
+      - sentencepiece             # needed by t5 / gemma / llama tokenizers
+      - protobuf
+      - scipy
+      - scikit-learn
+      - matplotlib
+      - numpy
+      - tqdm
+      - huggingface_hub

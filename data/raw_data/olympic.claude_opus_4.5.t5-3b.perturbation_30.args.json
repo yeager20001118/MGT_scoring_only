@@ -1,0 +1,15 @@
+{
+    "dataset_file": "/shared/amdgpu/home/xunye_tian_ck1/MGT/exp/raw_data/olympic.claude_opus_4.5",
+    "output_file": "/shared/amdgpu/home/xunye_tian_ck1/MGT/exp/evalue/results/olympic.claude_opus_4.5.falcon_7b",
+    "scoring_model_name": "falcon_7b",
+    "mask_filling_model_name": "t5-3b",
+    "n_perturbations": 30,
+    "pct_words_masked": 0.3,
+    "span_length": 2,
+    "mask_top_p": 0.96,
+    "seed": 0,
+    "device": "cuda",
+    "dataset": "olympic",
+    "cache_dir": "/shared/amdgpu/home/xunye_tian_ck1/MGT/cache_for_scoring",
+    "hf_token": "skip"
+}
